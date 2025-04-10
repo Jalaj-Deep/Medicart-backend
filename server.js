@@ -17,7 +17,7 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-app.use(async(req,res)=>{
+app.use(async(req,res,next)=>{
   console.log(req.url,req.method)
   next();
 })
