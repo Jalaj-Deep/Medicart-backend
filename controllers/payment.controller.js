@@ -64,6 +64,7 @@ exports.paymentVerification = async (req, res) => {
   console.log("Transaction is legit!");
 
    //res.redirect(`https://medicart-frontend.onrender.com`);
+    res.send({Message : "Done"});
 }catch(err){
   console.log(err);
 }
