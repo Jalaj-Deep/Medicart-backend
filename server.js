@@ -19,6 +19,7 @@ app.use(cors({
 }));
 app.use(async(req,res)=>{
   console.log(req.url,req.method)
+  next();
 })
 const con =async()=>{
     try {
